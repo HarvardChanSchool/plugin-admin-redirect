@@ -21,8 +21,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-// Plugin init.
-require_once( plugin_dir_path( __FILE__ ) . 'inc/class-{projectslug}.php' );
-${projectvar} = new {projectclass}();
+define( 'HSPH_PLUGIN_ADMIN_REDIRECT_INC_DIR', plugin_dir_path( __FILE__ ) );
 
-${projectvar}->init();
+require_once HSPH_PLUGIN_ADMIN_REDIRECT_INC_DIR . 'inc/class-hsph-plugin-admin-redirect.php';
+$hsph_plugin_admin_redirect = new HSPH_Plugin_Admin_Redirect();
+$hsph_plugin_admin_redirect->init();

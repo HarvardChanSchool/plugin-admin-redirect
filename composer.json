@@ -1,5 +1,5 @@
 {
-  "name": "harvardchanschool/hsph-plugin-redirect",
+  "name": "harvardchanschool/plugin-admin-redirect",
   "type": "wordpress-plugin",
   "description": "Redirects users from the Admin during maintenance",
   "homepage": "http://www.hsph.harvard.edu/information-technology/",

@@ -33,9 +33,9 @@ class HSPH_Plugin_Admin_Redirect {
 	 * @return void
 	 */
 	public static function redirect_admin() {
-		$redirect_url = get_option( 'hsph_admin_redirect_url' );
-		if ( ! is_super_admin() && 1 <= strlen( $redirect_url ) ) {
-			wp_redirect( $redirect_url );
+		// $redirect_url = get_option( 'hsph_admin_redirect_url' );
+		if ( ! is_super_admin() ) {
+			wp_redirect( 'https://www.hsph.harvard.edu/information-technology/2020/02/11/sph-websites-are-moving-to-a-new-hosting-service/' );
 			exit;
 		}
 	}
